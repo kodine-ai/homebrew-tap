@@ -5,22 +5,22 @@
 class Kodine < Formula
   desc "AI coding agent that lives in your terminal."
   homepage "https://github.com/kodine-ai/kodine"
-  version "1.0.3"
+  version "1.0.4"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kodine-ai/kodine/releases/download/v1.0.3/kodine-darwin-x64.zip"
-      sha256 "cd6e0b1a5f097e6b439b5a827ee265c9f3b86d65edb5782beba2ce34d2807656"
+      url "https://github.com/kodine-ai/kodine/releases/download/v1.0.4/kodine-darwin-x64.zip"
+      sha256 "56bf77aea2dad9e182b7687e93f547557ae4193f979ee0dbeb1ea7fd48c4cf6b"
 
       def install
         bin.install "kodine"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kodine-ai/kodine/releases/download/v1.0.3/kodine-darwin-arm64.zip"
-      sha256 "689a727872618201af4f179a17829af56e519ef394c1143e9f0ff8ad73982223"
+      url "https://github.com/kodine-ai/kodine/releases/download/v1.0.4/kodine-darwin-arm64.zip"
+      sha256 "14b21d7f25b6e7fecf5f559d86d1516fc0a7c81de77efb12e58e4060aa2d9322"
 
       def install
         bin.install "kodine"
@@ -30,15 +30,15 @@ class Kodine < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/kodine-ai/kodine/releases/download/v1.0.3/kodine-linux-x64.tar.gz"
-      sha256 "3d6c2f409c2016fc1440e26055c00725a0bb99dd25005bb72847751fe127c8c5"
+      url "https://github.com/kodine-ai/kodine/releases/download/v1.0.4/kodine-linux-x64.tar.gz"
+      sha256 "4e37074277d6a2c615cce0725ae03f4ca52608d6aea1f3bdef635c0704844d5b"
       def install
         bin.install "kodine"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/kodine-ai/kodine/releases/download/v1.0.3/kodine-linux-arm64.tar.gz"
-      sha256 "f9cd0f39c7aa60fef4bdec560021845545be16d6962270f4751981c0dc8392cc"
+      url "https://github.com/kodine-ai/kodine/releases/download/v1.0.4/kodine-linux-arm64.tar.gz"
+      sha256 "f2186fea5a2e7c9c5e975a7d75420a34dd9afd032bf14c7f7dd06194a0f764de"
       def install
         bin.install "kodine"
       end
