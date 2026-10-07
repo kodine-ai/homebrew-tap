@@ -12,7 +12,7 @@ class Kodine < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://kodine.net/downloads/cli/1.0.12/kodine-darwin-x64.zip"
-      sha256 "10fc66597cc73ca7b7a1bff40a554b1b30ebab98885cc8f0940d7315eb9013f6"
+      sha256 "b8ab87d6bd437fff26e7219a6e85e9197e97530988749249ed60dd8fa5667ff8"
 
       def install
         bin.install "kodine"
@@ -20,7 +20,7 @@ class Kodine < Formula
     end
     if Hardware::CPU.arm?
       url "https://kodine.net/downloads/cli/1.0.12/kodine-darwin-arm64.zip"
-      sha256 "6a9abc0d9b668f54dc8706da8191913af52208c5fbe569d95020bd160838ab90"
+      sha256 "2ce3d01e18f2c3ee10ff19439b4fadc73f8f8e3fb757609ce9312752444aaae3"
 
       def install
         bin.install "kodine"
@@ -31,14 +31,14 @@ class Kodine < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://kodine.net/downloads/cli/1.0.12/kodine-linux-x64.tar.gz"
-      sha256 "5d0c9deb6bc3da6e8ba55ebfe6ca4bda78fe1ff63a574ce14f6b18a412cba9ec"
+      sha256 "c866b730141499bde31b8d16e54f1a07577209d722359ae6502722e40e9c97aa"
       def install
         bin.install "kodine"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://kodine.net/downloads/cli/1.0.12/kodine-linux-arm64.tar.gz"
-      sha256 "f2cc98a5b6b76ca12f208a1117e8de70691a00b949a746870640a19001dd2f40"
+      sha256 "de52b7f5cc8bfe9df1a5b30075576219ff00ea456e464caad00c8527c8d3a21d"
       def install
         bin.install "kodine"
       end
