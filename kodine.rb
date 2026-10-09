@@ -5,22 +5,22 @@
 class Kodine < Formula
   desc "AI coding agent that lives in your terminal."
   homepage "https://kodine.net"
-  version "1.0.15"
+  version "1.0.16"
 
   depends_on "ripgrep"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://kodine.net/downloads/cli/1.0.15/kodine-darwin-x64.zip"
-      sha256 "9ec863d47d8801cd88a313e887e221737b99b1e2fe34add8a88d2b0015aacb95"
+      url "https://kodine.net/downloads/cli/1.0.16/kodine-darwin-x64.zip"
+      sha256 "df2555494d9536121dca3e0e69d31b01c9024fff7f386a013faf8dede368b04e"
 
       def install
         bin.install "kodine"
       end
     end
     if Hardware::CPU.arm?
-      url "https://kodine.net/downloads/cli/1.0.15/kodine-darwin-arm64.zip"
-      sha256 "d5755c3ba64fa625bac200e17e7e80446d556d177e0eb76a983de83190665442"
+      url "https://kodine.net/downloads/cli/1.0.16/kodine-darwin-arm64.zip"
+      sha256 "2fd886ac1feaa9c9cadedac82c243295404974d5414ea54b81109063c8f2c514"
 
       def install
         bin.install "kodine"
@@ -30,15 +30,15 @@ class Kodine < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://kodine.net/downloads/cli/1.0.15/kodine-linux-x64.tar.gz"
-      sha256 "2c9cdfa4ee5b75e5c37ac7ffe1e146dd676e9806d20d97bc1f26701f6a3143ee"
+      url "https://kodine.net/downloads/cli/1.0.16/kodine-linux-x64.tar.gz"
+      sha256 "0936c6d04b40c198c8f1f424186dc9b74c6ee3ea6c090f773a3185c595a1f171"
       def install
         bin.install "kodine"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://kodine.net/downloads/cli/1.0.15/kodine-linux-arm64.tar.gz"
-      sha256 "c3055596bf65b0a9a6fdb6a0f580edfc00f8a036fea25a4395f6437213b9610b"
+      url "https://kodine.net/downloads/cli/1.0.16/kodine-linux-arm64.tar.gz"
+      sha256 "1c10f54ca8af2606a7734c9d68438356d43c2511f6f3587a5e30ab9c8f3ce4a5"
       def install
         bin.install "kodine"
       end
